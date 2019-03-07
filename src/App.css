@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+html {
+  font-size: 10px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Rolling_Stones_concert_in_Zuiderpark_te_Den_Haag_%2C_overzicht_Rolling_Stones_fans%2C_Bestanddeelnr_928-6118.jpg) bottom center;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nowPlaying {
+  min-height: 50vh;
+}
+
+.keys {
   display: flex;
-  flex-direction: column;
+  min-height: 50vh;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
   color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
 }
 
-.App-link {
-  color: #61dafb;
+.playing {
+  transform: scale(1.2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
+  text-shadow: 0 0 0.1rem black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
 }
