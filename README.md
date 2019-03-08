@@ -1,3 +1,7 @@
+This project was inspired by Day 01 of JavaScript30
+
+Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

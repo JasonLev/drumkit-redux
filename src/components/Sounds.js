@@ -1,14 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import soundData from '../constants/sounds'
+import Sound from './Sound'
 
-const Sounds = props => (
-  <div className="keys">placeholder for Sounds</div>
-)
-
-// Sounds.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   id: PropTypes.number.isRequired,
-//   setDragData: PropTypes.func.isRequired
-// }
+const Sounds = () => {
+  const sounds = soundData.sounds.map(sound => {
+    return <Sound key={sound.id}
+              {...sound} />
+  })
+  return (
+    <div className="keys">{sounds}</div>
+  )
+}
 
 export default Sounds
