@@ -1,0 +1,32 @@
+{
+  "sounds": [
+    {
+      "id": 0,
+      "name": "clap",
+      "letter": "A",
+      "keyCode": 65,
+      "audioFile": "sounds/clap.wav"
+    },
+    {
+      "id": 1,
+      "name": "hihat",
+      "letter": "S",
+      "keyCode": 83,
+      "audioFile": "sounds/hihat.wav"
+    },
+    {
+      "id": 2,
+      "name": "kick",
+      "letter": "D",
+      "keyCode": 68,
+      "audioFile": "sounds/kick.wav"
+    },
+    {
+      "id": 3,
+      "name": "openhat",
+      "letter": "F",
+      "keyCode": 70,
+      "audioFile": "sounds/openhat.wav"
+    }
+  ]
+}

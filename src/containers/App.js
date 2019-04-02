@@ -6,7 +6,7 @@ import Sounds from '../components/Sounds'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <NowPlaying />
         <Sounds />
       </div>

@@ -1,14 +1,21 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import Sound from './Sound'
+import soundData from '../constants/sounds'
 
-const NowPlaying = props => (
-  <div className="nowPlaying">placeholder for NowPlaying</div>
-)
+const mapStateToProps = state => ({
+  soundID: state.nowPlaying
+})
 
-// NowPlaying.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   id: PropTypes.number.isRequired,
-//   setDragData: PropTypes.func.isRequired
-// }
+const NowPlaying = props => {
+  const sound = soundData.sounds.find(sound => sound.id === props.soundID)
+  return (
+    <div className="nowPlaying">
+      {props.soundID !== null && <Sound {...sound} />}
+    </div>
+  )
+}
 
-export default NowPlaying
+export default connect(
+  mapStateToProps
+)(NowPlaying)
