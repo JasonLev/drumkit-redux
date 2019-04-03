@@ -1,25 +1,43 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { setSound } from '../actions'
-// import soundFile from '../constants/${props.audioFile}'
-// asdfasdfaf
+
 const mapDispatchToProps = {setSound};
 
-// let audio = new Audio(`../${props.audioFile}`)//<audio src={`../${props.audioFile}`}></audio>
-// console.log(audio);
-// audio.play()
-// props.setSound(props.id)
-const Sound = props => {
-  return (
-    <div className="key" onClick={ () => {props.setSound(props.id)} }>
-      <kbd>{props.letter}</kbd>
-      <span className="sound">{props.name}</span>
-      <audio src={`../${props.audioFile}`}></audio>
-    </div>
-  )
+const mapStateToProps = state => ({
+  soundID: state.nowPlaying
+})
+
+class Sound extends Component {
+  constructor(props){
+    super(props)
+    this.audioRef = React.createRef();
+  }
+
+  componentDidMount(){
+    if (this.props.soundID === this.props.id) {
+      console.log("playing:", this.audioRef.current);
+      this.audioRef.current.currentTime = 0
+      this.audioRef.current.play()
+    }
+
+  }
+
+  render() {
+    return (
+      <div className={this.props.soundID === this.props.id ? "key playing" : "key"}
+           onClick={ () => {
+             this.props.setSound(this.props.id)
+           }}>
+        <kbd>{this.props.letter}</kbd>
+        <span className="sound">{this.props.name}</span>
+        <audio ref={this.audioRef} src={`../${this.props.audioFile}`} autoPlay></audio>
+      </div>
+    );
+  }
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Sound)
