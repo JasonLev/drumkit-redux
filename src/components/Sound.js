@@ -14,7 +14,7 @@ class Sound extends Component {
     this.audioRef = React.createRef();
   }
 
-  componentDidMount(){
+  componentDidUpdate(){
     if (this.props.soundID === this.props.id) {
       console.log("playing:", this.audioRef.current);
       this.audioRef.current.currentTime = 0
@@ -31,7 +31,7 @@ class Sound extends Component {
            }}>
         <kbd>{this.props.letter}</kbd>
         <span className="sound">{this.props.name}</span>
-        <audio ref={this.audioRef} src={`../${this.props.audioFile}`} autoPlay></audio>
+        <audio ref={this.audioRef} src={this.props.source}></audio>
       </div>
     );
   }
