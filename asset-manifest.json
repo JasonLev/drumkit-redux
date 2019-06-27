@@ -1,0 +1,22 @@
+{
+  "main.css": "/drumkit-redux/static/css/main.11ff25d4.chunk.css",
+  "main.js": "/drumkit-redux/static/js/main.05b0218e.chunk.js",
+  "main.js.map": "/drumkit-redux/static/js/main.05b0218e.chunk.js.map",
+  "runtime~main.js": "/drumkit-redux/static/js/runtime~main.09a31a02.js",
+  "runtime~main.js.map": "/drumkit-redux/static/js/runtime~main.09a31a02.js.map",
+  "static/js/2.44006638.chunk.js": "/drumkit-redux/static/js/2.44006638.chunk.js",
+  "static/js/2.44006638.chunk.js.map": "/drumkit-redux/static/js/2.44006638.chunk.js.map",
+  "index.html": "/drumkit-redux/index.html",
+  "precache-manifest.c61d3b02abf66e4882bfaf105135b27c.js": "/drumkit-redux/precache-manifest.c61d3b02abf66e4882bfaf105135b27c.js",
+  "service-worker.js": "/drumkit-redux/service-worker.js",
+  "static/css/main.11ff25d4.chunk.css.map": "/drumkit-redux/static/css/main.11ff25d4.chunk.css.map",
+  "static/media/boom.wav": "/drumkit-redux/static/media/boom.550be808.wav",
+  "static/media/clap.wav": "/drumkit-redux/static/media/clap.a6e86dd7.wav",
+  "static/media/hihat.wav": "/drumkit-redux/static/media/hihat.4ba39e07.wav",
+  "static/media/kick.wav": "/drumkit-redux/static/media/kick.4dd58595.wav",
+  "static/media/openhat.wav": "/drumkit-redux/static/media/openhat.a62db465.wav",
+  "static/media/ride.wav": "/drumkit-redux/static/media/ride.b0d70ec5.wav",
+  "static/media/snare.wav": "/drumkit-redux/static/media/snare.80c4129b.wav",
+  "static/media/tink.wav": "/drumkit-redux/static/media/tink.2a6bb6f5.wav",
+  "static/media/tom.wav": "/drumkit-redux/static/media/tom.572ed39d.wav"
+}
