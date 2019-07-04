@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/drumkit-redux/static/media/kick.4dd58595.wav"
   },
   {
-    "revision": "15cf8fdac13a42de0991",
+    "revision": "3326833080c4eb6683c6",
     "url": "/drumkit-redux/static/css/main.11ff25d4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/drumkit-redux/static/js/runtime~main.09a31a02.js"
   },
   {
-    "revision": "bc473b3a149a0bd01ab7",
-    "url": "/drumkit-redux/static/js/2.44006638.chunk.js"
+    "revision": "032968dc846fe5a452d3",
+    "url": "/drumkit-redux/static/js/2.5319e71f.chunk.js"
   },
   {
     "revision": "550be808a1e25f5b4db6b66350270316",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/drumkit-redux/static/media/hihat.4ba39e07.wav"
   },
   {
-    "revision": "15cf8fdac13a42de0991",
-    "url": "/drumkit-redux/static/js/main.05b0218e.chunk.js"
+    "revision": "3326833080c4eb6683c6",
+    "url": "/drumkit-redux/static/js/main.a610fc63.chunk.js"
   },
   {
     "revision": "a62db465466a58a60a40c4466d7730e5",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/drumkit-redux/static/media/tom.572ed39d.wav"
   },
   {
-    "revision": "b0fcbd9135481afc0d12478b6db900e4",
+    "revision": "3a056c58faff315ed7c1c6e6cafe1444",
     "url": "/drumkit-redux/index.html"
   }
 ];
